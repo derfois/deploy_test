@@ -42,13 +42,4 @@ append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bund
 # set :ssh_options, verify_host_key: :secure
 # 
 
-namespace :deploy do
 
-	after :restart, :clear_cache do
-		on roles(:web), in: :groups, limit:3, wait: 10 do
-			#Here we can do anthing such as:
-			#within release_path do
-			#   execute :rake, 'cache:clear'
-			#   end
-		end
-	end
