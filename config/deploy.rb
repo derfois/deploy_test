@@ -2,7 +2,7 @@
 lock "~> 3.11.0"
 
 set :application, "deploy_test"
-set :repo_url, "github.com/derfois/deploy_test.git"
+set :repo_url, "https://github.com/derfois/deploy_test.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
